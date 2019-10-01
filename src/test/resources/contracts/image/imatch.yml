@@ -1,0 +1,22 @@
+name: image_match
+description: match image api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["32925915", "1681837", "12005421", "12002348"]
+    values:
+      - type: "image"
+        value: "/x/y/image.jpg"
+response:
+  status: 200
+  body:
+    pids:
+      - oid: "32925915"
+        score: 1.0
+      - oid: "1681837"
+        score: 1.0
+      - oid: "12005421"
+        score: 1.0
+      - oid: "12002348"
+        score: 1.0
