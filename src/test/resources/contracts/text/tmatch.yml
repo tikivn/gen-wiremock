@@ -4,19 +4,25 @@ request:
   url: /v1/objects/match
   method: POST
   body:
-    pids: ["32925915", "1681837", "12005421", "12002348"]
+    pids: ["11", "22", "33", "44"]
     values:
+      - type: "name"
+        value: "iphone"
       - type: "description"
         value: "smartphone"
 response:
   status: 200
   body:
-    pids:
-      - oid: "32925915"
-        score: 1.0
-      - oid: "1681837"
-        score: 1.0
-      - oid: "12005421"
-        score: 1.0
-      - oid: "12002348"
-        score: 1.0
+    scores:
+      - oid: "11"
+        nameScore: 1.0
+        descriptionScore: 1.0
+      - oid: "22"
+        nameScore: 1.0
+        descriptionScore: 1.0
+      - oid: "33"
+        nameScore: 1.0
+        descriptionScore: 1.0
+      - oid: "44"
+        nameScore: 1.0
+        descriptionScore: 1.0

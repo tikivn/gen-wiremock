@@ -1,0 +1,24 @@
+name: request_detail_service
+description: request id detail
+request:
+  urlPath: /v2/request/detail/11request11
+  method: GET
+response:
+  status: 200
+  bodyFromFile: requestDetailResponse.json
+
+---
+
+name: category_service
+description: category detail
+request:
+  urlPath: catalog.tiki.services/v1/categories
+  method: GET
+  queryParameters:
+    ids: 111
+response:
+  status: 200
+  body:
+    data:
+      - id: 1795
+        path: "1/2/3/4/111"

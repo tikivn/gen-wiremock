@@ -4,19 +4,19 @@ request:
   url: /v1/objects/match
   method: POST
   body:
-    pids: ["32925915", "1681837", "12005421", "12002348"]
+    pids: ["11", "22", "33", "44"]
     values:
       - type: "image"
-        value: "/x/y/image.jpg"
+        value: "/x/y/iphone.jpg"
 response:
   status: 200
   body:
     pids:
-      - oid: "32925915"
+      - oid: "11"
         score: 1.0
-      - oid: "1681837"
+      - oid: "22"
         score: 1.0
-      - oid: "12005421"
+      - oid: "33"
         score: 1.0
-      - oid: "12002348"
+      - oid: "44"
         score: 1.0

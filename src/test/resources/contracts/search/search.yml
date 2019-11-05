@@ -1,11 +1,13 @@
 name: search_service
 description: search with name
 request:
-  url: /v2/products/
+  urlPath: /v2/products
   method: GET
   queryParameters:
     q: iphone
+    category: 2
     limit: 4
+    internal: 1
 response:
   status: 200
   bodyFromFile: searchNameResponse.json
