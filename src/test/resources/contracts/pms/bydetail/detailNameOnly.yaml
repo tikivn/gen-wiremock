@@ -5,6 +5,8 @@ request:
   queryParameters:
     limit: 2
   urlPath: /v2/products/match
+  headers:
+    Content-Type: application/json
   body:
     name: iphone only name
 

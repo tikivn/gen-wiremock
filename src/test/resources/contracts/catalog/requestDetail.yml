@@ -12,7 +12,7 @@ response:
 name: category_service
 description: category detail
 request:
-  urlPath: catalog.tiki.services/v1/categories
+  urlPath: /v1/categories
   method: GET
   queryParameters:
     ids: 111

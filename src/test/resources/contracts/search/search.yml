@@ -5,7 +5,7 @@ request:
   method: GET
   queryParameters:
     q: iphone
-    category: 2
+    category: 3
     limit: 4
     internal: 1
 response:
