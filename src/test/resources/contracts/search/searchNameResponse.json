@@ -1,1 +1,28 @@
-{"success":true,"redirect":{"status":false,"rule":null},"data":{"total":115078,"data":[{"id":11,"_score":283.7584},{"id":22,"_score":283.69403},{"id":33,"_score":283.35263},{"id":44,"_score":283.35263}]}}
+{
+  "success": true,
+  "redirect": {
+    "status": false,
+    "rule": null
+  },
+  "data": {
+    "total": 115078,
+    "data": [
+      {
+        "id": 11,
+        "_score": 283.7584
+      },
+      {
+        "id": 22,
+        "_score": 283.69403
+      },
+      {
+        "id": 33,
+        "_score": 283.35263
+      },
+      {
+        "id": 44,
+        "_score": 283.35263
+      }
+    ]
+  }
+}

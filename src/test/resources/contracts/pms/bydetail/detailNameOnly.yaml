@@ -1,0 +1,35 @@
+name: only_name
+description: given only name for matching
+request:
+  method: POST
+  queryParameters:
+    limit: 2
+  urlPath: /v2/products/match
+  body:
+    name: iphone only name
+
+response:
+  status: 200
+  body:
+    result:
+      - oid: "11"
+        score: 0.8
+      - oid: "22"
+        score: 0.7
+  matchers:
+      body:
+        - path: $.result
+          type: by_type
+          minOccurrence: 2
+          maxOccurrence: 2
+        - path: $.result[0].oid
+          type: by_equality
+        - path: $.result[1].oid
+          type: by_equality
+        - path: $.result[0].score
+          type: by_command
+          value: doubleCheck($it, 0.8)
+        - path: $.result[1].score
+          type: by_command
+          value: doubleCheck($it, 0.7)
+

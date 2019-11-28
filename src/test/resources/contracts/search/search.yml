@@ -11,3 +11,19 @@ request:
 response:
   status: 200
   bodyFromFile: searchNameResponse.json
+
+---
+
+name: search_service_only_name
+description: search with name
+request:
+  urlPath: /v2/products
+  method: GET
+  queryParameters:
+    q: iphone only name
+    limit: 4
+    internal: 1
+response:
+  status: 200
+  bodyFromFile: searchNameResponse.json
+

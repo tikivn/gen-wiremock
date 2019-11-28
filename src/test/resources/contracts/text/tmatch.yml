@@ -8,8 +8,6 @@ request:
     values:
       - type: "name"
         value: "iphone"
-      - type: "description"
-        value: "smartphone"
 response:
   status: 200
   body:
@@ -26,3 +24,29 @@ response:
       - oid: "44"
         nameScore: 1.0
         descriptionScore: 1.0
+
+---
+
+name: model_match
+description: match model api
+request:
+  url: /v1/model/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44"]
+    values:
+      - type: "model"
+        value: "XS-11"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        score: 1.0
+      - oid: "22"
+        score: 1.0
+      - oid: "33"
+        score: 1.0
+      - oid: "44"
+        score: 1.0
+

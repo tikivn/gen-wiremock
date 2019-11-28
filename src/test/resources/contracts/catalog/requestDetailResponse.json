@@ -1,1 +1,95 @@
-{"raw_payload":{"productInfo":{"productParams":{"id":11,"sku":"8979119539270","masterId":0,"masterSku":null,"superId":1957864,"superSku":"8979119539270","sellerId":0,"name":"iphone","productSetId":58,"type":"configurable","entityType":"master_configurable","editMode":"advanced","createdBy":"superseller@gmail.com","createdAt":null,"updatedBy":null,"updatedAt":"2019-09-13 16:04:52","price":7139000,"listPrice":0,"specialPrice":null,"visibility":4,"status":1,"state":"active","productCode":null,"minCode":"8979119539270","priceComponentParam":null,"attributeValues":{"description":{"code":"description","type":"text","value":"smartphone"},"list_price":{"code":"list_price","type":null,"value":7139000},"name":{"code":"name","type":"varchar","value":"[Mã ELMT6 giảm 4% đơn 6Tr] Điện thoại Xiaomi Redmi K20 Pro - Hàng nhập khẩu"},"brand":{"code":"brand","type":"int","value":25422},"item_model_number":{"code":"item_model_number","type":"varchar","value":"XS-11"}},"productMedias":[{"id":null,"url":"/x/y/iphone.jpg","path":"/x/y/iphone.jpg","isGallery":false,"isDefault":true,"isInfo":false,"isDisable":false,"isNew":false,"position":0},{"id":null,"url":"a.jpg","path":"a.jpg","isGallery":false,"isDefault":false,"isInfo":false,"isDisable":false,"isNew":false,"position":1},{"id":null,"url":"b.jpg","path":"b.jpg","isGallery":false,"isDefault":false,"isInfo":false,"isDisable":false,"isNew":false,"position":1}],"catekgories":[{"categoryId":111,"isPrimary":true,"name":"Điện thoại smartphone","isRoot":0},{"categoryId":222,"isPrimary":false,"name":"Điện Thoại - Máy Tính Bảng","isRoot":0}]}}}}
+{
+  "raw_payload": {
+    "productInfo": {
+      "productParams": {
+        "id": 11,
+        "sku": "8979119539270",
+        "sellerId": 0,
+        "name": "iphone",
+        "productSetId": 58,
+        "type": "configurable",
+        "entityType": "master_configurable",
+        "createdBy": "superseller@gmail.com",
+        "price": 7139000,
+        "specialPrice": null,
+        "visibility": 4,
+        "status": 1,
+        "state": "active",
+        "productCode": null,
+        "minCode": "8979119539270",
+        "priceComponentParam": null,
+        "attributeValues": {
+          "description": {
+            "code": "description",
+            "type": "text",
+            "value": "smartphone"
+          },
+          "list_price": {
+            "code": "list_price",
+            "type": null,
+            "value": 7139000
+          },
+          "brand": {
+            "code": "brand",
+            "type": "int",
+            "value": 25422
+          },
+          "item_model_number": {
+            "code": "item_model_number",
+            "type": "varchar",
+            "value": "XS-11"
+          }
+        },
+        "productMedias": [
+          {
+            "id": null,
+            "url": "/x/y/iphone.jpg",
+            "path": "/x/y/iphone.jpg",
+            "isGallery": false,
+            "isDefault": true,
+            "isInfo": false,
+            "isDisable": false,
+            "isNew": false,
+            "position": 0
+          },
+          {
+            "id": null,
+            "url": "a.jpg",
+            "path": "a.jpg",
+            "isGallery": false,
+            "isDefault": false,
+            "isInfo": false,
+            "isDisable": false,
+            "isNew": false,
+            "position": 1
+          },
+          {
+            "id": null,
+            "url": "b.jpg",
+            "path": "b.jpg",
+            "isGallery": false,
+            "isDefault": false,
+            "isInfo": false,
+            "isDisable": false,
+            "isNew": false,
+            "position": 1
+          }
+        ],
+        "categories": [
+          {
+            "categoryId": 111,
+            "isPrimary": true,
+            "name": "Điện thoại smartphone",
+            "isRoot": 0
+          },
+          {
+            "categoryId": 222,
+            "isPrimary": false,
+            "name": "Điện Thoại - Máy Tính Bảng",
+            "isRoot": 0
+          }
+        ]
+      }
+    }
+  }
+}

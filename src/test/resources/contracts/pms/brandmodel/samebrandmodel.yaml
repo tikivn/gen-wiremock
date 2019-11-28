@@ -1,0 +1,35 @@
+name: request_detail_service
+description: request id detail
+request:
+  urlPath: /v2/productRequests/11request11/match
+  queryParameters:
+    limit: 3
+  method: GET
+response:
+  status: 200
+  body:
+    result:
+      - id: "11"
+        score: 1.0
+      - id: "22"
+        score: 1.0
+      - id: "33"
+        score: 1.0
+
+---
+
+name: request_detail_service_limit2
+description: request id detail
+request:
+  urlPath: /v2/productRequests/11request11/match
+  queryParameters:
+    limit: 2
+  method: GET
+response:
+  status: 200
+  body:
+    result:
+      - id: "11"
+        score: 1.0
+      - id: "22"
+        score: 1.0
