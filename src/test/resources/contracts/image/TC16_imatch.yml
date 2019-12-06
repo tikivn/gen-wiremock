@@ -1,0 +1,16 @@
+name: TC16_image_match
+description: match image api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44"]
+    values:
+      - type: "image"
+        value: "/x/y/iphone16.jpg"
+response:
+  status: 500
+  body:
+    code: 500
+    message: Internal server error
+

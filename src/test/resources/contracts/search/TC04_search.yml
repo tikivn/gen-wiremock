@@ -1,0 +1,13 @@
+name: TC04_search_service
+description: search with name
+request:
+  urlPath: /v2/products
+  method: GET
+  queryParameters:
+    q: Điện Thoại 5" 512MB 4GB 2 Sim
+    category: 21054
+    limit: 100
+    internal: 1
+response:
+  status: 200
+  bodyFromFile: TC04_searchNameResponse.json

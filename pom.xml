@@ -14,11 +14,6 @@
     <name>gen-wiremock</name>
     <description>Create json files for wiremock via spring boot clound</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -48,6 +43,11 @@
         </dependency>
     </dependencies>
 
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
+    </properties>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -71,15 +71,9 @@
                         <goals>
                             <goal>convert</goal>
                             <goal>generateStubs</goal>
-                            <goal>generateTests</goal>
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <baseClassForTests></baseClassForTests>
-                    <packageWithBaseClasses>vn.tiki.genwiremock</packageWithBaseClasses>
-                    <includedFiles>*.yaml</includedFiles>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

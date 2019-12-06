@@ -1,0 +1,32 @@
+name: TC10_text_match
+description: match text api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44","55","66"]
+    values:
+      - type: "name"
+        value: "iphone 7 plus 10"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        nameScore: 1.037037037037082
+        descriptionScore: 1.0
+      - oid: "22"
+        nameScore: 2.037037037037083
+        descriptionScore: 1.0
+      - oid: "33"
+        nameScore: 0.037037037037084
+        descriptionScore: 1.0
+      - oid: "44"
+        nameScore: 0.037037037037085
+        descriptionScore: 1.0
+      - oid: "55"
+        nameScore: 0.037037037037086
+        descriptionScore: 1.0
+      - oid: "66"
+        nameScore: 0.037037037037087
+        descriptionScore: 1.0

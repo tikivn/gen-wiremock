@@ -1,0 +1,15 @@
+name: TC11_request_detail_service
+description: request id detail
+request:
+  urlPath: /v2/request/detail/requestID11
+  method: GET
+response:
+  status: 404
+  body:
+    code: 404
+    message: Not found requestID11
+
+
+
+
+

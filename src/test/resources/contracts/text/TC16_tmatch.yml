@@ -1,0 +1,33 @@
+name: TC16_text_match
+description: match text api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44"]
+    values:
+      - type: "name"
+        value: "iphone 7 plus 16"
+response:
+  status: 500
+  body:
+    code: 500
+    message: Internal server error
+
+---
+
+name: TC16_model_match
+description: match model api
+request:
+  url: /v1/model/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44"]
+    values:
+      - type: "model"
+        value: "A1865TC16"
+response:
+  status: 500
+  body:
+    code: 500
+    message: Internal server error

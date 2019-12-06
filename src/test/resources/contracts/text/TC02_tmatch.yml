@@ -1,0 +1,75 @@
+name: TC02_text_match
+description: match text api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44","55","66","77","88","99"]
+    values:
+      - type: "name"
+        value: "iphone 7 plus 02"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        nameScore: 0.037037037037049
+        descriptionScore: 1.0
+      - oid: "22"
+        nameScore: 0.037037037037050
+        descriptionScore: 1.0
+      - oid: "33"
+        nameScore: 0.037037037037051
+        descriptionScore: 1.0
+      - oid: "44"
+        nameScore: 0.037037037037052
+        descriptionScore: 1.0
+      - oid: "55"
+        nameScore: 0.037037037037053
+        descriptionScore: 1.0
+      - oid: "66"
+        nameScore: 0.037037037037054
+        descriptionScore: 1.0
+      - oid: "77"
+        nameScore: 0.037037037037055
+        descriptionScore: 1.0
+      - oid: "88"
+        nameScore: 0.037037037037056
+        descriptionScore: 1.0
+      - oid: "99"
+        nameScore: 0.037037037037057
+        descriptionScore: 1.0
+
+---
+name: TC02_model_match
+description: match model api
+request:
+  url: /v1/model/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44","55","66","77","88","99"]
+    values:
+      - type: "model"
+        value: "A1865TC02"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        score: 1
+      - oid: "22"
+        score: -1
+      - oid: "33"
+        score: 0
+      - oid: "44"
+        score: 1
+      - oid: "55"
+        score: -1
+      - oid: "66"
+        score: 0
+      - oid: "77"
+        score: -1
+      - oid: "88"
+        score: 1
+      - oid: "99"
+        score: 0

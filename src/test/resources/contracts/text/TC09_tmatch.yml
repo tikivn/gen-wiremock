@@ -1,0 +1,41 @@
+name: TC09_text_match
+description: match text api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44","55","66","77","88","99"]
+    values:
+      - type: "name"
+        value: "iphone 7 plus 09"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        nameScore: 3.037037037037073
+        descriptionScore: 1.0
+      - oid: "22"
+        nameScore: 2.037037037037074
+        descriptionScore: 1.0
+      - oid: "33"
+        nameScore: 1.037037037037075
+        descriptionScore: 1.0
+      - oid: "44"
+        nameScore: 4.037037037037076
+        descriptionScore: 1.0
+      - oid: "55"
+        nameScore: 4.037037037037077
+        descriptionScore: 1.0
+      - oid: "66"
+        nameScore: 4.037037037037078
+        descriptionScore: 1.0
+      - oid: "77"
+        nameScore: 4.037037037037079
+        descriptionScore: 1.0
+      - oid: "88"
+        nameScore: 4.037037037037080
+        descriptionScore: 1.0
+      - oid: "99"
+        nameScore: 4.037037037037081
+        descriptionScore: 1.0

@@ -1,24 +1,24 @@
-name: request_detail_service
+name: TC10_request_detail_service
 description: request id detail
 request:
-  urlPath: /v2/request/detail/11request11
+  urlPath: /v2/request/detail/requestID10
   method: GET
 response:
   status: 200
-  bodyFromFile: requestDetailResponse.json
+  bodyFromFile: TC10_requestDetailResponse.json
 
 ---
 
-name: category_service
+name: TC10_category_service
 description: category detail
 request:
   urlPath: /v1/categories
   method: GET
   queryParameters:
-    ids: 111
+    ids: 1795
 response:
   status: 200
   body:
     data:
       - id: 1795
-        path: "1/2/3/4/111"
+        path: "1/2/1789/1795"

@@ -1,17 +1,13 @@
-name: image_match
+name: TC02_image_match
 description: match image api
 request:
   url: /v1/objects/match
   method: POST
   body:
-    pids: ["11", "22", "33", "44"]
+    pids: ["11", "22", "33", "44","55","66","77","77","99"]
     values:
       - type: "image"
-        value: "/x/y/iphone.jpg"
-      - type: "thumb_1"
-        value: "a.jpg"
-      - type: "thumb_2"
-        value: "b.jpg"
+        value: "/x/y/iphone2.jpg"
 response:
   status: 200
   body:
@@ -23,4 +19,14 @@ response:
       - oid: "33"
         score: 1.0
       - oid: "44"
+        score: 1.0
+      - oid: "55"
+        score: 1.0
+      - oid: "66"
+        score: 1.0
+      - oid: "77"
+        score: 1.0
+      - oid: "88"
+        score: 1.0
+      - oid: "99"
         score: 1.0

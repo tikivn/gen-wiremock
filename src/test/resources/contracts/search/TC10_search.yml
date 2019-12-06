@@ -1,0 +1,13 @@
+name: TC10_search_service
+description: search with name
+request:
+  urlPath: /v2/products
+  method: GET
+  queryParameters:
+    q: iphone 7 plus 10
+    category: 1789
+    limit: 100
+    internal: 1
+response:
+  status: 200
+  bodyFromFile: TC10_searchNameResponse.json

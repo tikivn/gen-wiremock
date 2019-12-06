@@ -1,0 +1,46 @@
+name: TC07_text_match
+description: match text api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33"]
+    values:
+      - type: "name"
+        value: "iphone 7 plus 07"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        nameScore: 1.0
+        descriptionScore: 1.0
+      - oid: "22"
+        nameScore: 1.0
+        descriptionScore: 1.0
+      - oid: "33"
+        nameScore: 1.0
+        descriptionScore: 1.0
+
+---
+name: TC07_model_match
+description: match model api
+request:
+  url: /v1/model/match
+  method: POST
+  body:
+    pids: ["11", "22", "33"]
+    values:
+      - type: "model"
+        value: "A1865"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        score: 1
+      - oid: "22"
+        score: -1
+      - oid: "33"
+        score: 1
+

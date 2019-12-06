@@ -1,0 +1,90 @@
+name: TC01_text_match
+description: match text api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44"]
+    values:
+      - type: "name"
+        value: "iphone 7 plus"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        nameScore: 0.037037037037037
+        descriptionScore: 1.0
+      - oid: "22"
+        nameScore: 0.037037037037038
+        descriptionScore: 1.0
+      - oid: "33"
+        nameScore: 0.037037037037039
+        descriptionScore: 1.0
+      - oid: "44"
+        nameScore: 0.037037037037040
+        descriptionScore: 1.0
+      - oid: "55"
+        nameScore: 0.037037037037041
+        descriptionScore: 1.0
+      - oid: "66"
+        nameScore: 0.037037037037042
+        descriptionScore: 1.0
+      - oid: "77"
+        nameScore: 0.037037037037043
+        descriptionScore: 1.0
+      - oid: "88"
+        nameScore: 0.037037037037044
+        descriptionScore: 1.0
+      - oid: "99"
+        nameScore: 0.037037037037045
+        descriptionScore: 1.0
+      - oid: "1010"
+        nameScore: 0.037037037037046
+        descriptionScore: 1.0
+      - oid: "1111"
+        nameScore: 0.037037037037047
+        descriptionScore: 1.0
+      - oid: "1212"
+        nameScore: 0.037037037037048
+        descriptionScore: 1.0
+---
+name: TC01_model_match
+description: match model api
+request:
+  url: /v1/model/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44","55","66","77","88","99","1010","1111","1212"]
+    values:
+      - type: "model"
+        value: "A1865"
+response:
+  status: 200
+  body:
+    scores:
+      - oid: "11"
+        score: 1
+      - oid: "22"
+        score: -1
+      - oid: "33"
+        score: 0
+      - oid: "44"
+        score: 1
+      - oid: "55"
+        score: 1
+      - oid: "66"
+        score: 0
+      - oid: "77"
+        score: -1
+      - oid: "88"
+        score: -1
+      - oid: "99"
+        score: 1
+      - oid: "1010"
+        score: 0
+      - oid: "1111"
+        score: 0
+      - oid: "1212"
+        score: -1
+

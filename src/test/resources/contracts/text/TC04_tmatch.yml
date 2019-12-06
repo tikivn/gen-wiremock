@@ -1,4 +1,4 @@
-name: text_match
+name: TC04_text_match
 description: match text api
 request:
   url: /v1/objects/match
@@ -7,7 +7,7 @@ request:
     pids: ["11", "22", "33", "44"]
     values:
       - type: "name"
-        value: "iphone"
+        value: "Điện Thoại 5\" 512MB 4GB 2 Sim"
 response:
   status: 200
   body:
@@ -25,38 +25,10 @@ response:
         nameScore: 1.0
         descriptionScore: 1.0
 
----
-
-name: text_match_only_name
-description: match text api
-request:
-  url: /v1/objects/match
-  method: POST
-  body:
-    pids: ["11", "22", "33", "44"]
-    values:
-      - type: "name"
-        value: "iphone only name"
-response:
-  status: 200
-  body:
-    scores:
-      - oid: "11"
-        nameScore: 1.0
-        descriptionScore: 1.0
-      - oid: "22"
-        nameScore: 1.0
-        descriptionScore: 1.0
-      - oid: "33"
-        nameScore: 1.0
-        descriptionScore: 1.0
-      - oid: "44"
-        nameScore: 1.0
-        descriptionScore: 1.0
 
 ---
 
-name: model_match
+name: TC04_model_match
 description: match model api
 request:
   url: /v1/model/match
@@ -65,7 +37,7 @@ request:
     pids: ["11", "22", "33", "44"]
     values:
       - type: "model"
-        value: "XS-11"
+        value: "A1865TC04"
 response:
   status: 200
   body:
@@ -78,4 +50,3 @@ response:
         score: 1.0
       - oid: "44"
         score: 1.0
-

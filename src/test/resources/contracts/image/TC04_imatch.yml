@@ -1,4 +1,4 @@
-name: image_match
+name: TC04_image_match
 description: match image api
 request:
   url: /v1/objects/match
@@ -6,21 +6,17 @@ request:
   body:
     pids: ["11", "22", "33", "44"]
     values:
-      - type: "image"
-        value: "/x/y/iphone.jpg"
-      - type: "thumb_1"
-        value: "a.jpg"
-      - type: "thumb_2"
-        value: "b.jpg"
+    - type: "image"
+      value: "/x/y/iphone4.jpg"
 response:
   status: 200
   body:
     pids:
       - oid: "11"
-        score: 1.0
+        score: 0.11
       - oid: "22"
-        score: 1.0
+        score: 0.22
       - oid: "33"
-        score: 1.0
+        score: 0.79
       - oid: "44"
-        score: 1.0
+        score: 0.41

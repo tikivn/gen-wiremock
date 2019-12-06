@@ -1,0 +1,18 @@
+name: TC12_search_service
+description: search with name
+request:
+  urlPath: /v2/products
+  method: GET
+  queryParameters:
+    q: iphone 7 plus 12
+    category: 1789
+    limit: 100
+    internal: 1
+response:
+  status: 200
+  body:
+    data:
+      total: 0
+      data: []
+
+

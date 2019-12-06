@@ -2,14 +2,14 @@
   "raw_payload": {
     "productInfo": {
       "productParams": {
-        "id": 11,
+        "id": 2063053,
         "sku": "8979119539270",
         "masterId": 0,
         "masterSku": null,
         "superId": 1957864,
         "superSku": "8979119539270",
         "sellerId": 0,
-        "name": "iphone",
+        "name": "iphone 7 plus 16",
         "productSetId": 58,
         "type": "configurable",
         "entityType": "master_configurable",
@@ -31,17 +31,17 @@
           "description": {
             "code": "description",
             "type": "text",
-            "value": "smartphone"
+            "value": "iphone newest version"
           },
           "name": {
             "code": "name",
             "type": "varchar",
-            "value": "[Mã ELMT6 giảm 4% đơn 6Tr] Điện thoại Xiaomi Redmi K20 Pro - Hàng nhập khẩu"
+            "value": "iphone 7 plus 16"
           },
           "brand": {
             "code": "brand",
             "type": "int",
-            "value": 25422
+            "value": 17827
           },
           "list_price": {
             "code": "list_price",
@@ -51,47 +51,25 @@
           "item_model_number": {
             "code": "item_model_number",
             "type": "varchar",
-            "value": "XS-11"
+            "value": "A1865TC16"
           }
         },
         "productMedias": [
           {
             "id": null,
-            "url": "/x/y/iphone.jpg",
-            "path": "/x/y/iphone.jpg",
+            "url": "/x/y/iphone16.jpg",
+            "path": "/x/y/iphone16.jpg",
             "isGallery": false,
             "isDefault": true,
             "isInfo": false,
             "isDisable": false,
             "isNew": false,
             "position": 0
-          },
-          {
-            "id": null,
-            "url": "a.jpg",
-            "path": "a.jpg",
-            "isGallery": false,
-            "isDefault": false,
-            "isInfo": false,
-            "isDisable": false,
-            "isNew": false,
-            "position": 1
-          },
-          {
-            "id": null,
-            "url": "b.jpg",
-            "path": "b.jpg",
-            "isGallery": false,
-            "isDefault": false,
-            "isInfo": false,
-            "isDisable": false,
-            "isNew": false,
-            "position": 1
           }
         ],
         "categories": [
           {
-            "categoryId": 111,
+            "categoryId": 1795,
             "isPrimary": true,
             "name": "Điện thoại smartphone",
             "isRoot": 0

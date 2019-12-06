@@ -1,0 +1,26 @@
+name: TC06_image_match
+description: match image api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44","55","66"]
+    values:
+      - type: "image"
+        value: "/x/y/iphone6.jpg"
+response:
+  status: 200
+  body:
+    pids:
+    - oid: "11"
+      score: 1.0
+    - oid: "22"
+      score: 1.0
+    - oid: "33"
+      score: 1.0
+    - oid: "44"
+      score: 1.0
+    - oid: "55"
+      score: 1.0
+    - oid: "66"
+      score: 1.0

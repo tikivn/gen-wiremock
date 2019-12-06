@@ -1,0 +1,11 @@
+name: TC17_request_detail_service
+description: request id detail
+request:
+  urlPath: /v2/request/detail/requestID17
+  method: GET
+response:
+  status: 500
+  body:
+    code: 500
+    message: Internal server error
+

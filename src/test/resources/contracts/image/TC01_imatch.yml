@@ -1,0 +1,38 @@
+name: TC01_image_match
+description: match image api
+request:
+  url: /v1/objects/match
+  method: POST
+  body:
+    pids: ["11", "22", "33", "44","55","66","77","88","99","1010","1010","1111","1212"]
+    values:
+      - type: "image"
+        value: "/x/y/iphone1.jpg"
+response:
+  status: 200
+  body:
+    pids:
+      - oid: "11"
+        score: 1.0
+      - oid: "22"
+        score: 1.0
+      - oid: "33"
+        score: 1.0
+      - oid: "44"
+        score: 1.0
+      - oid: "55"
+        score: 1.0
+      - oid: "66"
+        score: 1.0
+      - oid: "77"
+        score: 1.0
+      - oid: "88"
+        score: 1.0
+      - oid: "99"
+        score: 1.0
+      - oid: "1010"
+        score: 1.0
+      - oid: "1111"
+        score: 1.0
+      - oid: "1212"
+        score: 1.0
